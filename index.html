@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Padaria Online</title>
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #5c4033; /* Cor quente de padaria */
+            color: white;
+            padding: 1rem 0;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover,
+        header nav ul li a.active {
+            color: #f39c12; /* Cor de destaque laranja */
+        }
+
+        footer {
+            background-color: #cfcd2b;
+            padding: 1rem;
+            text-align: center;
+            color: #777;
+        }
+
+      
+        .banner {
+            background-color: #f39c12; 
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .banner p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .destaques {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .destaques h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #5c4033; 
+        }
+
+        .destaques .produtos {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .destaques .produtos .produto {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 200px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .destaques .produtos .produto img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .destaques .produtos .produto h3 {
+            margin: 1rem 0;
+            font-size: 1.2rem;
+            color: #5c4033;
+        }
+
+        .destaques .produtos .produto p {
+            color: #777;
+        }
+
+        .destaques .produtos .produto button {
+            background-color: #5c4033;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        .destaques .produtos .produto button:hover {
+            background-color: #3e2c1c; 
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="minhaconta.html">Minha Conta</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <h1>Bem-vindo à nossa Padaria Online!</h1>
+            <p>Encontre os melhores pães, bolos e doces fresquinhos para sua casa. Faça sua compra de forma rápida e segura!</p>
+            <a href="produtos.html" style="color: white; font-weight: bold; text-decoration: none;">Ver Produtos</a>
+        </div>
+    </section>
+
+    <section class="destaques">
+        <div class="container">
+            <h2>Produtos em Destaque</h2>
+            <div class="produtos">
+                <div class="produto">
+                    <img src="https://cdn0.umcomo.com.br/pt/posts/5/8/0/como_fazer_pao_de_mel_8085_orig.jpg" alt="Pão de Mel">
+                    <h3>Pão de Mel</h3>
+                    <p>Delicioso e fofinho, o pão de mel da nossa padaria é irresistível.</p>
+                    <button>Ver Mais</button>
+                </div>
+                <div class="produto">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLCO0ihGrt25q41_Isr8oucW7rjkbJglNqLA&s" alt="Bolo de Laranja">
+                    <h3>Bolo de Laranja</h3>
+                    <p>Feito com ingredientes frescos e uma pitada de carinho!</p>
+                    <button>Ver Mais</button>
+                </div>
+                <div class="produto">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwI7mMHbR4Wn9ZHIta9-HVlOvBV82AUgGHWw&s" alt="Croissant">
+                    <h3>Croissant</h3>
+                    <p>Croissant quentinho e crocante, perfeito para o seu café da manhã.</p>
+                    <button>Ver Mais</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Padaria Online. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+

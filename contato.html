@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Loja Online</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover,
+        header nav ul li a.active {
+            color: #f39c12;
+        }
+
+        footer {
+            background-color: #cfcd2b;
+            padding: 1rem;
+            text-align: center;
+            color: #777;
+        }
+
+        .contato {
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .contato h1 {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .contato p {
+            margin-bottom: 2rem;
+            color: #777;
+        }
+
+        .form-contato {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-contato input,
+        .form-contato textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .form-contato textarea {
+            height: 150px;
+        }
+
+        .form-contato button {
+            background-color: #007BFF;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-contato button:hover {
+            background-color: #0056b3;
+        }
+
+        .info-contato {
+            background-color: #fff;
+            padding: 2rem;
+            margin-top: 3rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-contato h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-contato p {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .info-contato p span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="minhaconta.html">Minha Conta</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contato">
+            <div class="container">
+                <h1>Entre em Contato</h1>
+                <p>Tem alguma dúvida ou sugestão? Preencha o formulário abaixo e nossa equipe entrará em contato o mais rápido possível!</p>
+
+                <div class="form-contato">
+                    <form action="#" method="POST">
+                        <input type="text" name="nome" placeholder="Seu Nome" required>
+                        <input type="email" name="email" placeholder="Seu E-mail" required>
+                        <input type="text" name="assunto" placeholder="Assunto" required>
+                        <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+                        <button type="submit">Enviar Mensagem</button>
+                    </form>
+                </div>
+
+                <div class="info-contato">
+                    <h2>Informações de Contato da Loja</h2>
+                    <p><span>Endereço:</span> Avenida Dourados, 123, Bairro Central</p>
+                    <p><span>Telefone:</span> (67) 1234-5678</p>
+                    <p><span>E-mail:</span> contato@padariaonline.com</p>
+                    <p><span>Horário de Atendimento:</span> Segunda a Sexta - 9h às 18h</p>
+                    <p><span>Horário de Atendimento:</span> Sabado e Domingo - 7h às 12h</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Loja Online. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+

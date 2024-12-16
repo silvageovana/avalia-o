@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Conta</title>
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover,
+        header nav ul li a.active {
+            color: #f39c12;
+        }
+
+        footer {
+            background-color: #cfcd2b;
+            padding: 1rem;
+            text-align: center;
+            color: #777;
+        }
+
+        .minhaconta {
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .minhaconta h1 {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .conta-box {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .formulario {
+            background-color: #fff;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: left;
+        }
+
+        .formulario h2 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .formulario label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .formulario input {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .formulario input:focus {
+            outline: none;
+            border-color: #007BFF;
+        }
+
+        .botao {
+            display: inline-block;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .botao:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="minhaconta.html" class="active">Minha Conta</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="minhaconta">
+            <div class="container">
+                <h1>Minha Conta</h1>
+                <div class="conta-box">
+              
+                    <div class="formulario">
+                        <h2>Login</h2>
+                        <form action="#" method="post">
+                            <label for="email-login">E-mail:</label>
+                            <input type="email" id="email-login" name="email" placeholder="Digite seu e-mail" required>
+
+                            <label for="senha-login">Senha:</label>
+                            <input type="password" id="senha-login" name="senha" placeholder="Digite sua senha" required>
+
+                            <button type="submit" class="botao">Entrar</button>
+                        </form>
+                    </div>
+
+                  
+                    <div class="formulario">
+                        <h2>Criar Conta</h2>
+                        <form action="#" method="post">
+                            <label for="nome">Nome Completo:</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+                            <label for="email-cadastro">E-mail:</label>
+                            <input type="email" id="email-cadastro" name="email" placeholder="Digite seu e-mail" required>
+
+                            <label for="senha-cadastro">Senha:</label>
+                            <input type="password" id="senha-cadastro" name="senha" placeholder="Crie uma senha" required>
+
+                            <button type="submit" class="botao">Cadastrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Loja Online. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
